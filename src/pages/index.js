@@ -4,9 +4,8 @@ import SecondScene from "../components/MainPageComponents/SecondScene/SecondScen
 import ThirdScene from "../components/MainPageComponents/ThirdScene/ThirdScene"
 import FourthScene from "../components/MainPageComponents/FourthScene/FourthScene"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Row, Col, Container } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 import "../styles/styles.scss"
-import { faRProject } from "@fortawesome/free-brands-svg-icons"
 
 class CubeAnimator extends Component {
   componentDidMount() {

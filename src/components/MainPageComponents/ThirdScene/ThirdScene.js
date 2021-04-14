@@ -36,7 +36,11 @@ const ThirdScene = props => {
               </Link>
             </Col>
             <Col xs={4} lg={2} className="project m-0 p-0">
-              <a href="https://github.com/krzysiekwit1" target="_blank">
+              <a
+                href="https://github.com/krzysiekwit1"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img fluid src={githubImage} alt="" />
                 <div className="project-text-container">
                   <div> GitHub</div>

@@ -1,10 +1,7 @@
-import React from "react";
-import { Typography, AppBar, Toolbar, Grid } from "@material-ui/core";
-import useStyles from "./styles";
+import React from "react"
+import useStyles from "./styles"
 
 const Footer = () => {
-  const classes = useStyles();
-
   return (
     <div
       style={{
@@ -27,7 +24,7 @@ const Footer = () => {
         }}
       ></span>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

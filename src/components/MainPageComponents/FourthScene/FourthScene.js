@@ -1,7 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row } from "react-bootstrap"
 import "./fourthScene.scss"
 const FourthScene = props => {
   return (
@@ -10,11 +10,12 @@ const FourthScene = props => {
       ref={props.fourthSceneRef}
       className="fourth-scene-container"
     >
-      <Row className="justify-content-center footer-icons-container pt-1">
+      <Row className="justify-content-center footer-icons-container pt-3">
         <a
           className="ml-4"
           href="https://www.linkedin.com/in/krzysztof-witkowski-5a773a196/"
           target="_blank"
+          rel="noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedin} size="3x" />
         </a>
@@ -22,6 +23,7 @@ const FourthScene = props => {
           className="ml-3"
           href="https://github.com/krzysiekwit1"
           target="_blank"
+          rel="noreferrer"
         >
           <FontAwesomeIcon icon={faGithub} size="3x" />
         </a>
@@ -49,45 +51,6 @@ const FourthScene = props => {
         </svg>
       </Row>
     </Container>
-    // <div
-    //   ref={props.fourthSceneRef}
-    //   className={`fourth-container${
-    //     props.fourthSceneStatus === true ? " fourth-container-active" : ""
-    //   }`}
-    // >
-    //   <svg
-    //     onClick={() => props.scrollToFirstScene()}
-    //     className="mini-arrows-container"
-    //   >
-    //     <polygon
-    //       class="arrow-top"
-    //       points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "
-    //     />
-    //     <polygon
-    //       class="arrow-middle"
-    //       points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "
-    //     />
-    //     <polygon
-    //       class="arrow-bottom"
-    //       points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "
-    //     />
-    //   </svg>
-    //   <div className="footer-icons-container">
-    //     <a
-    //       href="https://www.linkedin.com/in/krzysztof-witkowski-5a773a196/"
-    //       target="_blank"
-    //     >
-    //       <FontAwesomeIcon icon={faLinkedin} size="3x" />
-    //     </a>
-
-    //     <a href="https://github.com/krzysiekwit1" target="_blank">
-    //       <FontAwesomeIcon icon={faGithub} size="3x" />
-    //     </a>
-    //   </div>
-    //   <div className="footer-copyright">
-    //     <span>Krzysztof Witkowski ©2021</span>
-    //   </div>
-    // </div>
   )
 }
 export default FourthScene
