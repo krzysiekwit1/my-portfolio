@@ -1,0 +1,9 @@
+.chart-container {
+  height: 390px;
+  width: 50%;
+
+  @media only screen and (max-width: 480px) {
+    height: 250px;
+    width: 100%;
+  }
+}

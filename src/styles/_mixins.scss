@@ -1,0 +1,38 @@
+@mixin arrows {
+  .arrows-container {
+    position: absolute;
+    top: 87vh;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    &__arrows-down {
+      width: 75px;
+      height: 65px;
+      margin-left: 48%;
+    }
+    polygon {
+      fill: rgba(255, 255, 255, 0.472);
+      transition: all 0.2s ease-out;
+    }
+    &__arrows-down:hover polygon {
+      fill: rgba(255, 255, 255, 0.76);
+      transition: all 0.2s ease-out;
+    }
+    &__arrows-down:hover .arrows-container__arrow-bottom {
+      transform: translateY(-18px);
+    }
+    &__arrows-down:hover .arrows-container__arrow-top {
+      transform: translateY(18px);
+    }
+
+    &__arrow-top {
+      opacity: 0.3;
+    }
+    &__arrow-middle {
+      opacity: 0.5;
+    }
+    &__arrow-bottom {
+      opacity: 0.5;
+    }
+  }
+}

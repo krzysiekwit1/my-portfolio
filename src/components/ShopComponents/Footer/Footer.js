@@ -1,0 +1,33 @@
+import React from "react";
+import { Typography, AppBar, Toolbar, Grid } from "@material-ui/core";
+import useStyles from "./styles";
+
+const Footer = () => {
+  const classes = useStyles();
+
+  return (
+    <div
+      style={{
+        width: "100%",
+        height: "80px",
+        bottom: "0",
+        overflow: "hidden",
+        backgroundColor: "#383838",
+        textAlign: "center",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <span
+        style={{
+          color: "white",
+          fontSize: "20px",
+          height: "30px",
+        }}
+      ></span>
+    </div>
+  );
+};
+
+export default Footer;

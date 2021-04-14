@@ -1,0 +1,28 @@
+.specific-country-input {
+  border: 0;
+  height: 30px;
+  border-bottom: 1px solid grey;
+  background-color: rgba(78, 104, 250, 0.287);
+  border-radius: 5px;
+}
+.specific-country-input:active {
+  outline: none;
+  box-shadow: 0px 0px 37px 1px rgba(0, 153, 255, 0.5);
+}
+.specific-country-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 37px 1px rgba(0, 153, 255, 0.5);
+}
+.specific-country-button {
+  border: 0;
+  background: rgb(0, 153, 255);
+  color: white;
+  height: 30px;
+  border-radius: 0.5vw;
+  border: 1px solid transparent;
+}
+.specific-country-button:hover {
+  color: rgb(0, 153, 255);
+  background-color: white;
+  border: 1px solid rgb(0, 153, 255);
+}
