@@ -11,6 +11,7 @@ import { faRProject } from "@fortawesome/free-brands-svg-icons"
 class CubeAnimator extends Component {
   componentDidMount() {
     document.title = "Krzysztof Witkowski"
+    document.body.style = "overflow:hidden;background: #ebebeb;"
   }
   constructor(props) {
     super(props)
@@ -44,9 +45,7 @@ class CubeAnimator extends Component {
     const { secondScene } = this.state
     const { thirdScene } = this.state
     const { fourthScene } = this.state
-    //document.body.style = "overflow:hidden;background: #ebebeb;"
 
-    console.log(secondScene)
     return (
       <>
         <Container fluid className="m-0 p-0">
@@ -70,27 +69,6 @@ class CubeAnimator extends Component {
           scrollToFirstScene={this.scrollToFirstScene}
           fourthSceneStatus={fourthScene}
         />
-        {/* <FirstScene
-          firstSceneRef={this.firstSceneRef}
-          scrollToSecondScene={this.scrollToSecondScene}
-        ></FirstScene>
-        <SecondScene
-          secondSceneRef={this.secondSceneRef}
-          scrollToThirdScene={this.scrollToThirdScene}
-          secondSceneStatus={secondScene}
-        ></SecondScene>
-        <ThirdScene
-          thirdSceneRef={this.thirdSceneRef}
-          scrollToFourthScene={this.scrollToFourthScene}
-          thirdSceneStatus={thirdScene}
-          changeMainPageToCovidMap={() => this.props.changeMainPage("front")}
-          changeMainPageToShop={() => this.props.changeMainPage("shop")}
-        ></ThirdScene>
-        <FourthScene
-          fourthSceneRef={this.fourthSceneRef}
-          scrollToFirstScene={this.scrollToFirstScene}
-          fourthSceneStatus={fourthScene}
-        ></FourthScene> */}
       </>
     )
   }

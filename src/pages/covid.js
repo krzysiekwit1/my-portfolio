@@ -46,6 +46,7 @@ class CovidMapContainer extends Component {
   }
   componentDidMount() {
     //summed covid data for all countries
+    document.body.style = "overflow:auto"
     const optionsBasicData = {
       method: "GET",
       url: "https://covid-19-statistics.p.rapidapi.com/reports/total",
@@ -202,7 +203,6 @@ class CovidMapContainer extends Component {
   }
 
   render() {
-    document.body.style = "overflow:auto"
     const showSpecificCountry = this.state.showDataSpecificCountry
     let specificCountryDataContainer
     if (showSpecificCountry) {

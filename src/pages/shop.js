@@ -83,11 +83,10 @@ class ShopContainer extends Component {
   componentDidMount = () => {
     this.fetchProducts()
     this.fetchCart()
+    document.body.style = "overflow:auto;background: #ebebeb;"
   }
   componentWillUnmount = () => {}
   render() {
-    document.body.style = "overflow:auto;background: #ebebeb;"
-
     return (
       <div
         className="body-container-shop"

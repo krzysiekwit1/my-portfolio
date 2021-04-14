@@ -59,7 +59,10 @@ const SecondScene = props => {
           </Row>
         </Col>
       </Row>
-      <Row className="arrows-container mx-0 mt-0 mt-md-5 ">
+      <Row
+        style={{ position: "absolute", bottom: 0 }}
+        className="arrows-container mx-0 mt-0 mt-md-5 "
+      >
         <svg
           onClick={() => props.scrollToThirdScene()}
           className="arrows-container__arrows-down"
