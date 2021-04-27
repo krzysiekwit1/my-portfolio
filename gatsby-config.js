@@ -6,7 +6,6 @@
 
 module.exports = {
   /* Your site config here */
-  pathPrefix: "/my-portfolio",
   plugins: [
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,

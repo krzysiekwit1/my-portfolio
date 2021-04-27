@@ -61,7 +61,7 @@ const SecondScene = props => {
       </Row>
       <Row
         style={{ position: "absolute", bottom: 0 }}
-        className="arrows-container mx-0 mt-0 mt-md-5 "
+        className="arrows-container mx-0 mt-0 mt-md-5 mb-3"
       >
         <svg
           onClick={() => props.scrollToThirdScene()}
@@ -83,75 +83,6 @@ const SecondScene = props => {
         </svg>
       </Row>
     </Container>
-    // <div
-    //   ref={props.secondSceneRef}
-    //   className={`second-container${
-    //     props.secondSceneStatus === true ? " second-container-active" : ""
-    //   }`}
-    // >
-    //   <div className="about-title-container">
-    //     <span className="about-title">About</span>
-    //   </div>
-    //   <div className="left-section">
-    //     <div className="hexagon" style={{ backgroundImage: `url(${photo})` }}>
-    //       <div className="hexagon__hexTop"></div>
-    //       <div className="hexagon__hexBottom"></div>
-    //     </div>
-    //     <div className="personal-information">
-    //       I am a newly made engineer. I enjoy creating software and learning new
-    //       technologies. In my spare time I like to play tennis, unfortunately
-    //       the current situation makes it difficult. That's why I spend my time
-    //       on studying and creating websites.
-    //     </div>
-    //   </div>
-    //   <div className="right-section">
-    //     <div className="right-section__title">Technologies:</div>
-    //     <div className="skills-section">
-    //       <div className="skills-section__left">
-    //         {/* <i className="fab fa-js fa-3x"></i> */}
-    //         <FontAwesomeIcon icon={faJs} size="3x" />
-    //         <div className="icon-name">JavaScript</div>
-    //         {/* <i className="fab fa-react fa-3x"></i> */}
-    //         <FontAwesomeIcon icon={faReact} size="3x" />
-    //         <div className="icon-name">React</div>
-    //         {/* <i className="fab fa-php fa-3x"></i> */}
-    //         <FontAwesomeIcon icon={faPhp} size="3x" />
-    //         <div className="icon-name">PHP</div>
-    //       </div>
-    //       <div className="skills-section__right">
-    //         {/* <i className="fab fa-laravel fa-3x"></i> */}
-    //         <FontAwesomeIcon icon={faLaravel} size="3x" />
-    //         <div className="icon-name">Laravel</div>
-    //         {/* <i className="fab fa-css3-alt fa-3x"></i> */}
-    //         <FontAwesomeIcon icon={faCss3} size="3x" />
-    //         <div className="icon-name">CSS</div>
-    //         {/* <i className="fab fa-html5 fa-3x"></i> */}
-    //         <FontAwesomeIcon icon={faHtml5} size="3x" />
-    //         <div className="icon-name">HTML</div>
-    //       </div>
-    //     </div>
-    //   </div>
-    //   <div className="arrows-container">
-    //     <svg
-    //       onClick={() => props.scrollToThirdScene()}
-    //       className="arrows-container__arrows-down"
-    //     >
-    //       <polygon
-    //         className="arrows-container__arrow-top"
-    //         points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "
-    //       />
-    //       <polygon
-    //         className="arrows-container__arrow-middle"
-    //         points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "
-    //       />
-    //       <polygon
-    //         id="buggedArrow"
-    //         className="arrows-container__arrow-bottom"
-    //         points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "
-    //       />
-    //     </svg>
-    //   </div>
-    // </div>
   )
 }
 export default SecondScene
