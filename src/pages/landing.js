@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Navbar from "../components/LandingPage/navBar/Navbar"
 import FirstSection from "../components/LandingPage/FirstSection/FirstSection"
@@ -11,27 +11,33 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleDoubleLeft } from "@fortawesome/free-solid-svg-icons"
 
-const landing = () => (
-  <>
-    <Navbar />
-    <FirstSection />
-    <SecondSection />
-    <ThirdSection />
-    <FourthSection />
-    <Footer />
-    <Link to="/">
-      <FontAwesomeIcon
-        style={{
-          position: "fixed",
-          left: "5px",
-          top: "70px",
-          color: "red",
-          zIndex: "2",
-        }}
-        icon={faAngleDoubleLeft}
-        size="3x"
-      />
-    </Link>
-  </>
-)
-export default landing
+const Landing = () => {
+  useEffect(() => {
+    document.body.style = "overflow-y:auto;"
+  })
+
+  return (
+    <>
+      <Navbar />
+      <FirstSection />
+      <SecondSection />
+      <ThirdSection />
+      <FourthSection />
+      <Footer />
+      <Link to="/">
+        <FontAwesomeIcon
+          style={{
+            position: "fixed",
+            left: "5px",
+            top: "70px",
+            color: "red",
+            zIndex: "2",
+          }}
+          icon={faAngleDoubleLeft}
+          size="3x"
+        />
+      </Link>
+    </>
+  )
+}
+export default Landing

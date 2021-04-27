@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import covidImage from "../../../assets/images/CovidApi.png"
 import githubImage from "../../../assets/images/github.png"
 import shopImage from "../../../assets/images/Shop.png"
-import landingPageImage from "../../../assets/images/landingPage2.png"
+import landingPageImage from "../../../assets/images/landingPage1.png"
 import { Container, Col, Row } from "react-bootstrap"
 import "./thirdScene.scss"
 const ThirdScene = props => {
