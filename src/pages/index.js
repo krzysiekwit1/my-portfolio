@@ -10,7 +10,7 @@ import "../styles/styles.scss"
 class CubeAnimator extends Component {
   componentDidMount() {
     document.title = "Krzysztof Witkowski"
-    document.body.style = "overflow:hidden;background: #ebebeb;"
+    //document.body.style = "overflow:hidden;background: #ebebeb;"
   }
   constructor(props) {
     super(props)

@@ -203,18 +203,14 @@ const SpecificItem = ({
   }
   return (
     <>
-      {product.media !== undefined ? (
+      {product.media !== undefined && (
         <Item
           product={product}
           onAddToCart={onAddToCart}
           productSameCategory={productSameCategory}
           handleProductPick={handleProductPick}
         />
-      ) : (
-        console.log(product)
       )}
-      {console.log("tutaj")}
-      <div>twoja stara</div>
     </>
   )
 }

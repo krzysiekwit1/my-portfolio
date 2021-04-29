@@ -23,7 +23,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import {
   faBoxOpen,
-  faBox,
   faCopyright,
   faAddressBook,
   faAmbulance,

@@ -1,6 +1,12 @@
+@import "../../../styles/styles.scss";
+
 .fourth-scene-container {
-  height: 23vh;
+  position: relative;
+  height: 15vh;
   background: rgb(22, 22, 22);
+  @include media-breakpoint-down(md) {
+    height: 20vh;
+  }
   .footer-icons-container {
     a {
       svg {
@@ -21,8 +27,10 @@
     }
   }
   .mini-arrows {
-    height: 50px;
-    padding-bottom: 35px;
+    bottom: 0;
+    right: 50px;
+    position: absolute;
+    height: 75px;
     .mini-arrows-container {
       transform: rotateX(180deg) scale(0.5);
       cursor: pointer;

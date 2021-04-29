@@ -90,6 +90,7 @@ const FirstElement = ({ elementRevealed }) => (
       <img
         className="second-section-container__chartImage"
         src={chartSVG}
+        alt="chart svg"
       ></img>
     </Col>
   </Row>
@@ -129,6 +130,7 @@ const SecondElement = ({ elementRevealed }) => (
       <img
         className="second-section-container__callCenterImage"
         src={callCenterSVG}
+        alt="call center svg"
       ></img>
     </Col>
     <Col xs={12} md={6} className="d-none d-md-block mt-1 mt-lg-3">
@@ -174,7 +176,11 @@ const ThirdElement = ({ elementRevealed }) => (
       md={6}
       className="d-flex justify-content-center d-md-block mt-3 mt-md-0 pl-lg-5"
     >
-      <img className="second-section-container__aiImage" src={aiSVG}></img>
+      <img
+        className="second-section-container__aiImage"
+        src={aiSVG}
+        alt="ai svg"
+      ></img>
     </Col>
   </Row>
 )

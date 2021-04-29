@@ -1,10 +1,11 @@
 @import "../../../styles/styles.scss";
+@import "./secondSceneIconsAnimations.scss";
+
 .second-scene-container {
   height: 100vh;
   background-color: white;
   position: relative;
   .about-title-container {
-    text-align: center;
     font-size: 55px;
     .about-title {
       position: relative;
@@ -153,7 +154,6 @@
       }
     }
     .right-section {
-      text-align: center;
       div {
         span {
           font-weight: bold;
@@ -163,57 +163,109 @@
           }
         }
       }
-      .skills-section {
-        &__left {
-          svg {
-            color: rgb(8, 181, 250);
-            text-align: center;
-            transform: scale(1.25);
-            @include media-breakpoint-down(md) {
-              transform: scale(0.9);
-            }
+      .technologies {
+        .javascript-icon-container {
+          .fa-js {
+            color: rgb(214, 165, 3);
           }
-          .icon-name {
-            color: black;
-            width: 100%;
-            font-size: 17px;
-            font-weight: bold;
-            text-align: center;
-            @include media-breakpoint-down(md) {
-              font-size: 15px;
-              font-weight: 500;
-            }
+          h5 {
+            transform: translateY(12px);
           }
         }
-        &__right {
-          svg {
-            color: rgb(8, 181, 250);
-            text-align: center;
-            transform: scale(1.25);
-            @include media-breakpoint-down(md) {
-              transform: scale(0.9);
-            }
+        .gatsbyjs-icon-container {
+          .gatsbyjs-icon {
+            transform: translateY(-6px) scale(0.75);
           }
-          .icon-name {
-            color: black;
-            width: 100%;
-            font-size: 17px;
-            font-weight: bold;
-            text-align: center;
-            @include media-breakpoint-down(md) {
-              font-size: 15px;
-              font-weight: 500;
-            }
+        }
+        .react-icon-container {
+          .fa-react {
+            transform: translateY(2px);
+            color: rgb(97, 211, 240);
+          }
+          h5 {
+            transform: translateY(12px);
+          }
+        }
+        .jquery-icon-container {
+          .jquery-icon {
+            transform: scale(0.7) translateY(-2px);
+          }
+        }
+        .netlify-icon-container {
+          .netlify-icon {
+            transform: scale(0.65) translateY(-7px);
+          }
+          h5 {
+            transform: translateY(-7px);
+          }
+        }
+        .graphql-icon-container {
+          .graphql-icon {
+            transform: scale(0.72);
+          }
+        }
+        .php-icon-container {
+          .fa-php {
+            transform: translateY(8px);
+            color: rgb(61, 164, 233);
+          }
+          h5 {
+            transform: translateY(18px);
+          }
+        }
+        .laravel-icon-container {
+          .fa-laravel {
+            transform: translateY(6px);
+            color: rgb(218, 54, 33);
+          }
+          h5 {
+            transform: translateY(18px);
+          }
+        }
+        .css-icon-container {
+          .fa-css3 {
+            transform: translateY(6px);
+            color: rgb(1, 111, 236);
+          }
+          h5 {
+            transform: translateY(12px);
+          }
+        }
+        .sass-icon-container {
+          .fa-sass {
+            transform: translateY(6px);
+            color: rgb(165, 93, 147);
+          }
+          h5 {
+            transform: translateY(12px);
+          }
+        }
+        .html5-icon-container {
+          .fa-html5 {
+            transform: translateY(6px);
+            color: rgb(216, 74, 31);
+          }
+          h5 {
+            transform: translateY(12px);
+          }
+        }
+        .git-icon-container {
+          .fa-git-alt {
+            transform: translateY(6px);
+            color: rgb(241, 113, 73);
+          }
+          h5 {
+            transform: translateY(12px);
           }
         }
       }
     }
   }
   .arrows-container {
+    position: absolute;
+    bottom: 0;
     cursor: pointer;
     width: 100%;
-    display: flex;
-    justify-content: center;
     &__arrows-down {
       width: 75px;
       height: 65px;
@@ -252,41 +304,193 @@
 .second-scene-container-active {
   .about-title-container {
     span {
-      animation: apearFromRight 1s linear;
+      animation: apearFromTopTitle 1s linear;
     }
   }
   .about-title::after {
-    animation: apearFromRight 1s linear;
+    animation: apearFromTopTitle 1s linear;
   }
   .left-section {
     .hexagon {
       animation-delay: 2s;
-      animation: iconDrop 4s linear;
+      animation: hexagonApear 4s linear;
     }
   }
   .right-section {
-    &__title {
-    }
-    .skills-section {
-      &__left {
-        svg {
-          animation-delay: 2s;
-          animation: iconDrop 4s linear;
+    div {
+      span {
+        font-weight: bold;
+        font-size: 22px;
+        @include media-breakpoint-down(md) {
+          font-size: 18px;
         }
       }
-      &__right {
-        svg {
-          animation-delay: 2s;
-          animation: iconDrop 4s linear;
+    }
+    .technologies {
+      .javascript-icon-container {
+        .fa-js {
+          color: rgb(214, 165, 3);
+        }
+        h5 {
+          opacity: 0;
+          transform: translateY(12px);
+          animation: apearFromTopJavaScriptText 0.5s ease-in-out 2.5s forwards;
+        }
+        opacity: 0;
+        animation: apearFromRightIcon 0.5s ease-in-out 2s forwards;
+      }
+      .gatsbyjs-icon-container {
+        .gatsbyjs-icon {
+          transform: translateY(-6px) scale(0.75);
+        }
+        h5 {
+          opacity: 0;
+          animation: apearFromTopIconText 0.5s ease-in-out 2.5s forwards;
+        }
+        opacity: 0;
+        animation: apearFromRightIcon 0.5s ease-in-out 1.5s forwards;
+      }
+      .react-icon-container {
+        .fa-react {
+          transform: translateY(2px);
+          color: rgb(97, 211, 240);
+        }
+        h5 {
+          opacity: 0;
+          transform: translateY(12px);
+          animation: apearFromTopReactText 0.5s ease-in-out 2.5s forwards;
+        }
+        opacity: 0;
+        animation: apearFromRightIcon 0.5s ease-in-out 1s forwards;
+      }
+      .jquery-icon-container {
+        .jquery-icon {
+          transform: scale(0.7) translateY(-2px);
+        }
+        h5 {
+          opacity: 0;
+          animation: apearFromTopIconText 0.5s ease-in-out 2.5s forwards;
+        }
+        opacity: 0;
+        animation: apearFromRightIcon 0.5s ease-in-out 0.5s forwards;
+      }
+      .netlify-icon-container {
+        .netlify-icon {
+          transform: scale(0.65) translateY(-7px);
+          @include media-breakpoint-down(xs) {
+            transform: translateX(-15px);
+          }
+        }
+        h5 {
+          opacity: 0;
+          transform: translateY(-7px);
+          animation: apearFromTopNetlifyText 0.5s ease-in-out 2.5s forwards;
+        }
+        opacity: 0;
+        animation: apearFromRightIcon 0.5s ease-in-out 2s forwards;
+      }
+      .graphql-icon-container {
+        .graphql-icon {
+          transform: scale(0.72);
+        }
+        h5 {
+          opacity: 0;
+          animation: apearFromTopIconText 0.5s ease-in-out 2.5s forwards;
+        }
+        opacity: 0;
+        animation: apearFromRightIcon 0.5s ease-in-out 1.5s forwards;
+      }
+      .php-icon-container {
+        .fa-php {
+          transform: translateY(8px);
+          color: rgb(61, 164, 233);
+        }
+        h5 {
+          opacity: 0;
+          transform: translateY(18px);
+          animation: apearFromTopPHPText 0.5s ease-in-out 2.5s forwards;
+        }
+        opacity: 0;
+        animation: apearFromRightIcon 0.5s ease-in-out 1s forwards;
+      }
+      .laravel-icon-container {
+        .fa-laravel {
+          transform: translateY(6px);
+          color: rgb(218, 54, 33);
+        }
+        h5 {
+          opacity: 0;
+          transform: translateY(18px);
+          animation: apearFromTopLaravelText 0.5s ease-in-out 2.5s forwards;
+        }
+        opacity: 0;
+        animation: apearFromRightIcon 0.5s ease-in-out 0.5s forwards;
+      }
+      .css-icon-container {
+        .fa-css3 {
+          transform: translateY(6px);
+          color: rgb(1, 111, 236);
+        }
+        h5 {
+          opacity: 0;
+          transform: translateY(12px);
+          animation: apearFromTopCSSText 0.5s ease-in-out 2.5s forwards;
+        }
+        opacity: 0;
+        animation: apearFromRightIcon 0.5s ease-in-out 2s forwards;
+      }
+      .sass-icon-container {
+        .fa-sass {
+          transform: translateY(6px);
+          color: rgb(165, 93, 147);
+        }
+        h5 {
+          opacity: 0;
+          transform: translateY(12px);
+          animation: apearFromTopSASSText 0.5s ease-in-out 2.5s forwards;
+        }
+        opacity: 0;
+        animation: apearFromRightIcon 0.5s ease-in-out 1.5s forwards;
+      }
+      .html5-icon-container {
+        .fa-html5 {
+          transform: translateY(6px);
+          color: rgb(216, 74, 31);
+        }
+        h5 {
+          opacity: 0;
+
+          transform: translateY(12px);
+          animation: apearFromTopHTMLText 0.5s ease-in-out 2.5s forwards;
+        }
+        opacity: 0;
+        animation: apearFromRightIcon 0.5s ease-in-out 1s forwards;
+      }
+      .git-icon-container {
+        .fa-git-alt {
+          transform: translateY(6px);
+          color: rgb(241, 113, 73);
+        }
+        h5 {
+          opacity: 0;
+          transform: translateY(12px);
+          animation: apearFromTopGitText 0.5s ease-in-out 2.5s forwards;
+        }
+        opacity: 0;
+        animation: apearFromRightIcon 0.5s ease-in-out 0.5s forwards;
+      }
+      @include media-breakpoint-down(xs) {
+        h5 {
+          font-size: 1rem;
         }
       }
     }
   }
 }
-@keyframes apearFromRight {
+@keyframes apearFromTopTitle {
   0% {
     opacity: 0;
-    transform: translateX(300px);
+    transform: translateY(-300px);
   }
   75% {
     opacity: 1;
@@ -295,7 +499,7 @@
     transform: translateX(0px);
   }
 }
-@keyframes iconDrop {
+@keyframes hexagonApear {
   0% {
     opacity: 0;
     color: rgb(204, 20, 164);
@@ -311,6 +515,5 @@
 @media (min-width: 0px) and (max-width: 959.8) {
   .left-section {
     transform: scale(0.5);
-    background-color: red;
   }
 }

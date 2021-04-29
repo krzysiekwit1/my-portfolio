@@ -1,0 +1,144 @@
+@keyframes apearFromRightIcon {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes apearFromTopIconText {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes apearFromTopJavaScriptText {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 1;
+  }
+}
+@keyframes apearFromTopReactText {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 1;
+  }
+}
+
+@keyframes apearFromTopNetlifyText {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-7px);
+    opacity: 1;
+  }
+}
+@keyframes apearFromTopPHPText {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(18px);
+    opacity: 1;
+  }
+}
+@keyframes apearFromTopLaravelText {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(18px);
+    opacity: 1;
+  }
+}
+@keyframes apearFromTopCSSText {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 1;
+  }
+}
+@keyframes apearFromTopSASSText {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 1;
+  }
+}
+@keyframes apearFromTopHTMLText {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 1;
+  }
+}
+@keyframes apearFromTopGitText {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 1;
+  }
+}

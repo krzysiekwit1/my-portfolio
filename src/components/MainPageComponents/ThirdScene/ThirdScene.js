@@ -22,7 +22,7 @@ const ThirdScene = props => {
           <Row className="justify-content-center">
             <Col xs={4} lg={3} className="project m-0 p-0">
               <Link to="/landing">
-                <img fluid src={landingPageImage} alt="" />
+                <img src={landingPageImage} alt="" />
                 <div className="project-text-container">
                   <div> Creative Agency/Landing Page</div>
                 </div>
@@ -30,7 +30,7 @@ const ThirdScene = props => {
             </Col>
             <Col xs={4} lg={3} className="project m-0 p-0">
               <Link to="/covid">
-                <img fluid src={covidImage} alt="" />
+                <img src={covidImage} alt="" />
                 <div className="project-text-container">
                   <div> Covid Data App</div>
                 </div>
@@ -38,7 +38,7 @@ const ThirdScene = props => {
             </Col>
             <Col xs={4} lg={3} className="project m-0 p-0">
               <Link to="/shop">
-                <img fluid src={shopImage} alt="" />
+                <img src={shopImage} alt="" />
                 <div className="project-text-container">
                   <div> Shop App</div>
                 </div>
@@ -50,7 +50,7 @@ const ThirdScene = props => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img fluid src={githubImage} alt="" />
+                <img src={githubImage} alt="" />
                 <div className="project-text-container">
                   <div> GitHub</div>
                 </div>

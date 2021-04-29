@@ -29,6 +29,7 @@
       &:hover {
         color: $color-white;
         border: 1px solid $color-gold;
+        background-color: transparent;
       }
       &:active {
         background-color: transparent !important;
